@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "piazzolla", "open sans";
+}
+#contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.titulo {
+  color: rgb(235, 234, 197);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background: #6d6027;
+  background: -webkit-linear-gradient(to right, #6e479900, #6b85ad54),
+    url(../img/hotel1.jpg);
+  background: linear-gradient(to right, #6e479900, #6b85ad54),
+    url(../img/hotel1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+.menu {
+  list-style: none;
+  padding: 0%;
+  max-width: 800px;
+  margin: auto;
+  font-size: 25px;
+  background: #000000;
+}
+
+.menu ul {
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  display: block;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+}
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+.menu li a:hover {
+  background: #a37e7e;
+}
+.conte {
+  text-align: center;
+}
+.conte a {
+  color: white;
+  text-decoration: none;
+  background: #8bc34a;
+  padding: 4px 20px;
+  border-radius: 30px;
+  font-size: 30px;
+  margin: 10px;
+}
+h1 {
+  font-family: "arial" "bree serif";
+  color: rgb(252, 244, 244);
+  font-size: 70px;
+}
+
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.texto-header h1 {
+  color: rgb(19, 22, 4);
+  font-size: 50px;
+}
+.conte{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  
+}
+.cont h2 {
+  color: black;
+  font-size: 45px;
+  font-family: "calibre";
+  background: burlywood;
+}
+.conte p {
+color: #000000;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+.contenedor h2 {
+  color: black;
+  font-size: 45px;
+  font-family: "calibre";
+  background: burlywood;
+}
+.servicio-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  font-size: 25px;
+}
+
+.servicio-ind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicio-ind:nth-child(1),
+.servicio-ind:nth-child(2) {
+  margin-bottom: 60px;
+}
+
+.servicio-ind img {
+  width: 15%;
+  height: 100px;
+  border-radius: 80%;
+  margin-top: -10px;
+  float: left;
+  flex-direction: column;
+}
+.imagen-about-us {
+  width: 48%;
+}
+.contenido-textos p {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: center;
+}
+.galeria {
+  background: #f2f2f2;
+}
+.galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.imagen-port {
+  width: 24%;
+  margin-bottom: 10px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+.imagen-port {
+  width: 24%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagen-port > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: rgba(166, 158, 173, 0.541);
+  transition: transformacion.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover-galeria img {
+  width: 50%;
+}
+
+.hover-galeria p {
+  color: rgb(58, 204, 204);
+}
+
+.imagen-port:hover .hover-galeria {
+  transform: scale(1);
+}
+
+.Ubicacion h2 {
+  font-size: 35px;
+  color: black;
+  font-family: "arial" "bree serif";
+  background: burlywood;
+}
+.contactos {
+  z-index: 1;
+  width: 100%;
+  height: 450px;
+  border: 1px solid black;
+  opacity: 0.3;
+  filter: alpha(opacity=90);
+  position: relative;
+  margin-top: -450px;
+}
+.mensaje h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.input {
+  width: 500px;
+  height: 30px;
+  margin-bottom: 20px;
+  color: #000000;
+  float: right;
+  margin-right: 20px;
+}
+.textarea {
+  width: 500px;
+  color: #000000;
+  float: none;
+}
+.button {
+  width: 500px;
+  color: #000000;
+  float: none;
+  margin: 15px;
+}
+
+.piepagina {
+  background-image: url(../img/hotelito.png);
+  background-size: contain;
+}
+.Contacto h2 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(227, 231, 212);
+  background-image: url(../img/hotelito.png);
+  background-size: cover;
+  padding: 50px;
+}
+
+i {
+  font-size: 2.2rem;
+  padding: 10px;
+  color: rgb(231, 233, 222);
+}
+
+.piepagina h3 {
+  padding: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
